@@ -1,0 +1,9 @@
+Metric,Normal Model,Historical Simulation,EVT + Copula Model
+VaR (99%),1.7548%,2.0238%,2.1780%
+Expected Shortfall (99%),2.0157%,2.9764%,2.9775%
+Tail Shape parameter (xi),0.0000 (assumed),N/A,0.145726
+GPD Scale parameter (beta),N/A,N/A,0.004883
+Tail Dependence (t-Copula),0.0000 (assumed),N/A,0.000000
+Tail Dependence (Gaussian),0.0000,N/A,0.000000
+t-Copula Degrees of Freedom,Infinity (assumed),N/A,50.00
+ES Improvement vs Normal,Baseline,N/A,47.7%
