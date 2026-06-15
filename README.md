@@ -108,9 +108,3 @@ python3 main.py --tickers SPY QQQ EEM GLD --confidence 0.99
 ## Technologies
 
 `Python` `SciPy` `NumPy` `Pandas` `yfinance` `Matplotlib` `Seaborn`
-
----
-
-## Disclaimer
-
-For educational and research purposes only. Not financial advice.
