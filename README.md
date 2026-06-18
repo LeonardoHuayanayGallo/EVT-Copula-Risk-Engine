@@ -87,6 +87,8 @@ python3 main.py --tickers SPY QQQ EEM GLD --confidence 0.99
 | `05_copula_correlation.png` | Pearson vs Gaussian vs t-Copula matrices |
 | `risk_report.csv` | Full metric comparison table |
 
+![Image Alt](https://github.com/LeonardoHuayanayGallo/EVT-Copula-Risk-Engine/blob/42f97d2643ebbc4a91759a6bce8f13aa1f18bdb3/output/01_return_distribution.png)
+
 ---
 
 ## Methodology
