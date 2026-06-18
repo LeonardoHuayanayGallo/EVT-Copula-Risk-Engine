@@ -34,26 +34,6 @@ Standard VaR assumes returns follow a normal distribution. They do not:
 
 ---
 
-## Architecture
-
-```
-yfinance (free) → Daily Log Returns
-                        ↓
-            EVT Module (evt_model.py)
-            Threshold selection (90th pct)
-            GPD fitting via MLE
-            VaR + ES at 99% confidence
-                        ↓
-            Copula Module (copula_model.py)
-            Gaussian Copula (lambda_L = 0)
-            Student-t Copula (lambda_L > 0)
-            Tail dependence coefficient
-                        ↓
-            5 Charts + Risk Report CSV
-```
-
----
-
 ## Setup
 
 ```bash
@@ -78,17 +58,11 @@ python3 main.py --tickers SPY QQQ EEM GLD --confidence 0.99
 
 ## Output
 
-| File | Content |
-|---|---|
-| `01_return_distribution.png` | Empirical vs Normal with VaR markers |
-| `02_gpd_tail_fit.png` | GPD fit + Q-Q validation |
-| `03_risk_comparison.png` | VaR and ES: Normal vs Historical vs EVT |
-| `04_rolling_var_drawdown.png` | Rolling 252-day VaR and drawdown |
-| `05_copula_correlation.png` | Pearson vs Gaussian vs t-Copula matrices |
-| `risk_report.csv` | Full metric comparison table |
-
 ![Image Alt](https://github.com/LeonardoHuayanayGallo/EVT-Copula-Risk-Engine/blob/42f97d2643ebbc4a91759a6bce8f13aa1f18bdb3/output/01_return_distribution.png)
-
+![Image Alt](https://github.com/LeonardoHuayanayGallo/EVT-Copula-Risk-Engine/blob/d529e17063263a8c49f8a190fbc85c7eb1be08cf/output/02_gpd_tail_fit.png)
+![Image Alt](https://github.com/LeonardoHuayanayGallo/EVT-Copula-Risk-Engine/blob/d529e17063263a8c49f8a190fbc85c7eb1be08cf/output/03_risk_comparison.png)
+![Image Alt](https://github.com/LeonardoHuayanayGallo/EVT-Copula-Risk-Engine/blob/d529e17063263a8c49f8a190fbc85c7eb1be08cf/output/04_rolling_var_drawdown.png)
+![Image Alt](https://github.com/LeonardoHuayanayGallo/EVT-Copula-Risk-Engine/blob/d529e17063263a8c49f8a190fbc85c7eb1be08cf/output/05_copula_correlation.png)
 ---
 
 ## Methodology
