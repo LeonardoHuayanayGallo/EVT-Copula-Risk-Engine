@@ -17,7 +17,7 @@ Two frameworks implemented:
 2. **Copula Modeling** — fits Gaussian and Student-t Copulas to capture
    asymmetric tail dependence and financial contagion between assets
 
-No API keys required. All data is pulled free via `yfinance`.
+All data is pulled free via `yfinance`.
 
 ---
 
@@ -31,28 +31,6 @@ Standard VaR assumes returns follow a normal distribution. They do not:
   normal markets but crash together during crises
 - This is why Gaussian Copula CDO models failed in 2008, and why
   Basel III replaced VaR with Expected Shortfall in 2016
-
----
-
-## Setup
-
-```bash
-git clone https://github.com/your-username/evt-copula-risk-engine
-cd evt-copula-risk-engine
-pip3 install -r requirements.txt
-```
-
----
-
-## Usage
-
-```bash
-# Default: SPY QQQ GLD TLT portfolio (2018-2024)
-python3 main.py
-
-# Custom portfolio
-python3 main.py --tickers SPY QQQ EEM GLD --confidence 0.99
-```
 
 ---
 
