@@ -4,6 +4,12 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Data](https://img.shields.io/badge/Data-yfinance%20free-brightgreen)
 
+
+Hi there 👋
+
+Most VaR models assume returns are normally distributed — they're not, and that assumption is part of why models failed in 2008. This project applies Extreme Value Theory and Copula modeling instead, measuring tail risk and cross-asset contagion the way risk desks actually need to see it.
+
+
 ## Overview
 
 A quantitative risk engine that measures portfolio tail risk without
